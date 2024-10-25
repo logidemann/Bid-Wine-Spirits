@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bid deposit</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/deposit.css"> <!-- Assurez-vous que le chemin est correct -->
+    <script type="module" src="../../../Back_end/src/deposit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Bid Wine Spirit - Bid deposit</p>
+        </div>
+        <div class="form">
+            <div id="gauche">
+                <label for="titre-annonce">Bid title:</label>
+                <input type="text" id="titre-annonce" placeholder="Enter ad title">
+
+                <label for="type-select">Type :</label>
+                <select id="type-select">
+                    <option value="vin">Wine</option>
+                    <option value="spiritueux">Spirit</option>
+                </select>
+
+                <label for="etat-select">Condition :</label>
+                <select id="etat-select">
+                    <option value="Neuf">New</option>
+                    <option value="Abîmé">Damaged</option>
+                    <option value="Très abîmé">Very damaged</option>
+                </select>
+
+                <label for="year">Year :</label>
+                <input type="text" id="year" placeholder="Production year">
+
+                <label for="brand">Brand name :</label>
+                <input type="text" id="brand" placeholder="Product brand">
+            </div>
+            <div id="droite">
+                <label for="prix-input">Price :</label>
+                <input type="text" id="prix-input" placeholder="Desired price">
+
+                <label for="description-produit">Bid description :</label>
+                <textarea id="description-produit" placeholder="Describe the product..."></textarea>
+
+                <label for="file">Add photos :</label>
+                <input type="file" id="file" accept=".jpg, .jpeg, .png"><br><br>
+
+                <label for="main-propre">Delivery of the property :</label>
+                <input type="radio" id="main-propre">Hand-delivered</input>
+                <input type="radio" id="livraison">Delivery</input><br><br>
+
+                <label for="contact-input">Your contact details :</label>
+                <input type="text" id="contact-input" placeholder="Phone number or email">
+
+                <label for="pays-select">Country :</label>
+                <select id="country" name="country">
+                    <option value="">Country</option>
+                </select>
+
+                <label for="city">City :</label>
+                <select name="city" id="city">
+                    <option value="">City</option>
+                </select>
+
+                <label for="cp">Zip code :</label>
+                <input type="text" id="cp" placeholder="Zip code">
+
+                <label for="end-date">Bid end date:</label>
+                <input type="date" id="end-date">
+            </div>
+            <button id="submit">Confirm deposit</button>
+        </div>
+        <div class="footer">
+            <a href="./home.html"><button>Back to home page</button></a>
+        </div>
+    </div>
+</body>
+</html>

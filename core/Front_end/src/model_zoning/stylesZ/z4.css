@@ -1,0 +1,131 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+}
+#photodepo{
+    top: 10%;
+    position: absolute;
+    background-color: gray;
+  }
+.container {
+  max-width: 1200px;
+  /* La largeur max 1200px. */
+  margin: auto;
+  /* Centre le conteneur sur la page. */
+  padding: 20px;
+  /* Ajoute un peu d'espace autour du contenu interne. */
+}
+
+.header {
+  display: flex;
+  /* Utilise flexbox pour l'alignement horizontal. */
+  justify-content: space-between;
+  /* Répartit les enfants également horizontalement. */
+  margin-bottom: 20px;
+  /* Ajoute un peu d'espace sous l'en-tête. */
+}
+
+.titre-annonce {
+  flex-basis: 40%;
+  /* Prend 40% de l'espace disponible. */
+}
+
+/* Conteneur pour les détails supplémentaires de l'annonce. */
+.details-annonce {
+  display: flex;
+  justify-content: space-between;
+  /* Espacement entre les éléments. */
+  flex-basis: 58%;
+  /* Prend 58% de l'espace disponible. */
+}
+
+/* Styles pour les champs de sélection et d'entrée de texte. */
+.type-select,
+.produit-select,
+.etat-select,
+.prix-input {
+  width: calc(100% - 10px);
+  /* Prend toute la largeur disponible moins 10px pour le margin-left. */
+  padding: 10px;
+  /* Un peu d'espace à l'intérieur des champs. */
+  margin-left: 10px;
+  /* Un peu d'espace à gauche de chaque champ. */
+}
+
+.corps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.page-blanc {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: peru;
+}
+
+.photo-section {
+  position: relative;
+  background-color: purple;
+}
+
+.lieu-livraison {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+}
+
+.contact-section {
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
+
+#info_client {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+}
+
+#end-date {
+  margin-top: 20px;
+  background-color: #c45252;
+}
+
+#calendar {
+  margin: 20px 0;
+  background-color: #492222;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+/* Le pied de page du document. */
+footer {
+  text-align: center;
+  /* Centre le texte. */
+  width: 100%;
+  /* Ajoute un peu d'espace à l'intérieur. */
+  height: 50px;
+  background-color: #c45252;
+  /* Couleur de fond pour le pied de page. */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

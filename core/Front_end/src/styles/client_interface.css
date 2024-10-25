@@ -1,0 +1,146 @@
+
+body,button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caladea';
+  background-color: #eaeaeafa;
+}
+header, footer {
+  background-color: #3c1a1a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav button {
+  background-color: #444;
+  border: 2.2px solid #eaeaeafa;
+  padding: 10px 20px;
+  margin-right: 5px;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+nav button:hover {
+  background-color: #555;
+}
+
+#button{
+    text-align: center;
+}
+
+p a {
+  color: #000000; 
+  margin: 0 10px;
+  font-family: 'Caladea';
+  text-decoration: none; 
+}
+
+
+#participate_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#my_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#history {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.auction_item {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.auction_item img {
+  height: 200px;
+  margin: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.auction_item .auction_info {
+  background-color: #dddddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: none;
+  position: absolute;
+  width: 95%;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.auction_item:hover .auction_info {
+  display: block;
+  z-index: 3;
+}
+
+.view_auction {
+  background-color: #7B2D26;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.auction_item h3, .auction_item p {
+  margin: 5px 0;
+}
+
+h1{
+  font-size: 1.7em;
+  color:rgb(0, 0, 0);
+  text-decoration: underline;
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 2px;
+}
+
+#username{
+  float: right;
+  padding: 12px;
+
+}
+
+.view_auction2 {
+  background-color: #af392e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}

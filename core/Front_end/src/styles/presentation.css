@@ -1,0 +1,112 @@
+html{
+    position: relative;
+    min-height:100%;
+    font-family: 'Caladea';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/1.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+header {
+    background-color: transparent;
+    height: 6vh; 
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+.titre{
+    font-family: 'Yellowtail';
+    font-size: 6rem;
+    margin-bottom: 8px;
+}
+
+.slogan{
+    font-family: 'Yellowtail';
+    position: relative;
+    font-size: 2.2rem;
+    margin-left: 450px;
+}
+
+.logo{
+    object-fit: contain;
+    height: 140%;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+.barnav{
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    padding-left: 28px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+.barnav > *:not(:last-child) {
+    margin-right: 20px;
+}
+
+.barnav a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: #3c1a1a; 
+    color: #ffffff; 
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0.5rem; 
+    font-size: 0.8rem; 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center; /* Centre les liens horizontalement */
+    flex-wrap: wrap; /* Les liens vont à la ligne si nécessaire */
+}
+
+.footer-links a {
+    color: #ffffff; /* Blanc pour les liens */
+    margin: 0 10px; /* Espace horizontalement entre les liens */
+    text-decoration: none; /* Aucun soulignement sur les liens */
+    padding: 5px 0; /* Ajustez pour le padding vertical si nécessaire */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}

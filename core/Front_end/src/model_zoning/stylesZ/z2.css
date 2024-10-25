@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+  }
+  .container {
+    width: 300px; /* ajustez la largeur selon vos besoins */
+    border: 1px solid #ccc; /* une bordure fine */
+    padding: 20px;
+    background-color: rgb(131, 12, 12); /* pour que le contenu soit lisible sur le fond */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* optionnel, pour ajouter une ombre au formulaire */
+    z-index: 1;
+    border-radius: 2%;
+  }
+  #fond{
+    top: 10%;
+    position: absolute;
+    background-color: gray;
+  }
+  
+  .header{
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    background-color: #7B2D26;
+  }
+  .form, .footer button {
+    margin: 20px;
+    text-align: center;
+    background-color: aqua;
+  }
+  
+  .form input[type=text], .form input[type=password] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form button {
+    width: 90%;
+    background-color: green ;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: purple;
+  }
+  

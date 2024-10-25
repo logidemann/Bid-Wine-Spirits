@@ -1,0 +1,157 @@
+body, html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: left; 
+    background: url("../img/PageHome.webp") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.left-column, .right-column {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column {
+    width: 60%; /* Maintien de la proportion pour la colonne de gauche */
+    align-items: center; /* Centrer les éléments de la colonne de gauche */
+}
+
+.right-column {
+    width: 60%; /* Maintien de la proportion pour la colonne de droite */
+}
+
+#bid_img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 69%;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f8f9fa;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 5px 5px;
+    flex: 1;
+}
+
+.card h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.horizontal-cards {
+    display: flex;
+    justify-content: space-around; /* Ajuste l'espacement entre les cartes */
+    width: 100%;
+    margin-top: 20px; /* Espacement avec les éléments au-dessus */
+}
+
+.timer-info {
+    width: 100%;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.timer-info table {
+    margin: auto;
+    width: auto;
+}
+
+.input-block {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+#current_price, #bid_btn {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#bid_btn {
+    background-color: #7B2D26;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#bid_btn:hover {
+    background-color: #5a1d15;
+}
+
+.contact-info {
+    width: 95%;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+h1, p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+    #bid_img, #current_price, #bid_btn {
+        width: 100%;
+    }
+}
+
+#map {
+    height: 100%;
+    width: 95%;
+    margin-left: 5px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}

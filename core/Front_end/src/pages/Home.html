@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine and spirits offers</title>
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <input type="text" id="search_input" placeholder="Search...">
+    <select id="type">
+      <option value="all">All products</option>
+      <option value="vin">Wines</option>
+      <option value="spiritueux">Spirits</option>
+    </select>
+    <a href="./home.html"><button >Home</button></a>
+    <a href="./deposit.html"><button>Place an ad</button></a>
+    <a href="./client_interface.html"><button>Client interface</button></a>
+    <a href="./presentation.html"><button onclick="localStorage.removeItem('password'); localStorage.removeItem('email'); localStorage.removeItem('uid'); localStorage.removeItem('bid_id'); localStorage.removeItem('usuername'); localStorage.setItem('stay_logged', false)">Déconnexion</button></a>
+    <a id="username">Pseudo</a>
+  </nav> 
+</header>
+
+<div id="price_sort">
+  <input type="text" id="min_price" class="price_range" placeholder="550">
+  <input type="text" id="max_price" class="price_range" placeholder="1500">
+</div>
+
+<main>
+  <h1 style="margin-left: 10px;">Current bids :</h1>
+  <section id="auction_gallery">
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Wine and Spirits bids</p>
+</footer>
+<script src="../../../Back_end/src/home.js" type="module"></script>
+</body>
+</html>
+

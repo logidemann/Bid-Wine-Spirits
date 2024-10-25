@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enchères</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../styles/viewbid.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <img id="bid_img" src="" alt="Bid image">
+                <div class="timer-info">
+                    <table>
+                        <tr>
+                            <td id="days" style="color: rgb(231, 4, 4); font-weight: bold;">00</td>
+                            <td id="hours" style="color: rgb(231, 4, 4); font-weight: bold;">00</td>
+                            <td id="minutes" style="color: rgb(231, 4, 4); font-weight: bold;">00</td>
+                            <td id="seconds" style="color: rgb(231, 4, 4); font-weight: bold;">00</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Days</td>    
+                            <td class="label">Hours</td>
+                            <td class="label">Min</td>
+                            <td class="label">Sec</td>
+                        </tr>
+                    </table>
+                    <p id="status"></p>
+                    <p style="margin-right: 330px;"><b>Current price :</b></p>
+                    <input id="current_price" type="number"> €</input>
+                    <p id="bidder"></p>
+                    <button id="bid_btn">Bid</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <h1 id="title">Bid title</h1>
+                <div class="card">
+                    <h2>Description</h2>
+                    <p id="description"></p>
+                </div>
+                <div class="card">
+                    <h2>Product type</h2>
+                    <p id="type"></p>
+                </div>
+                <div class="card">
+                    <h2>Brand</h2>
+                    <p id="brand"></p>
+                </div>
+                <div class="horizontal-cards">
+                    <div class="card">
+                        <h2>Year</h2>
+                        <p id="year"></p>
+                    </div>
+                    <div class="card">
+                        <h2>Condition</h2>
+                        <p id="condition"></p>
+                    </div>
+                    <div class="card">
+                        <h2>Shed</h2>
+                        <p id="remise"></p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p id="phone">Phone number</p>
+                    <p id="city">City</p>
+                    <p id="cp">Zip code</p>
+                    <p id="country">Country</p><br>
+                </div>
+                <div id="map"></div>
+        </div>
+        <!-- Google map API -->
+       <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyAHfIpnzMcPTo37nJKpVgSmpXwQJON1Q2s", v: "beta"});
+        </script>-->
+        <script src="../../../Back_end/src/viewbid.js" type="module"></script>
+    </body>
+</html>
